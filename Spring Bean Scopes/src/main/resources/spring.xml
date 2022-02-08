@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="Puser" class="ma.youcode.beans.User" scope="prototype"></bean> <!--Every intance will be with same signature-->
+    <bean id="Suser" class="ma.youcode.beans.User" scope="singleton"></bean> <!-- One signature for one instance-->
+</beans>
