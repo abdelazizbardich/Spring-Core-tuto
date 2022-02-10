@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
+
+        <!--By Name (Note: this method uses the setter agrument type to define wired name ) -->
+<!--    <bean id="user" class="ma.youcode.beans.User" autowire="byType"></bean>-->
+        <!--    By Name (Note: this method uses the setter name to define wired name ) -->
+<!--    <bean id="user" class="ma.youcode.beans.User" autowire="byName"></bean>-->
+        <!--    By Constructor  (Note: this method uses the argument constructor ) -->
+<!--    <bean id="user" class="ma.youcode.beans.User" autowire="constructor"></bean>-->
+
+
+    <bean id="userDao" class="ma.youcode.Dao.UserDao"></bean>
+</beans>
